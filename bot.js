@@ -1,7 +1,7 @@
 
 var Botkit = require('botkit');
 var Forecast = require('forecast.io');
-var options = {APIKey:process.env.FORECASTTOKEN};
+var options = {APIKey:'433aa3af7ab580036c433a8c84b9172a'};
 var forecast = new Forecast(options);
 
 //var childProcess = require("child_process");
