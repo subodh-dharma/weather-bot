@@ -18,7 +18,7 @@ npm install
 
    Currently, you cannot all use the class slack team because there is a limit in
    current users:
-   
+
    > You should only be able to create 16 connections from the same API token.  
      Unfortunately, that's a general limit across all of Slack's RTM APIs.
 
@@ -37,7 +37,7 @@ function getWeather()
 {
 	var latitude = "48.208579"
 	var longitude = "16.374124"
-	forecast.get(latitude, longitude, function (err, res, data) 
+	forecast.get(latitude, longitude, function (err, res, data)
 	{
       if (err) throw err;
       //console.log('res: ' + JSON.stringify(res));
@@ -50,3 +50,4 @@ function getWeather()
 ### Enhance your bot.
 
 See if you can extend the bot to be able to get the current location as part of a conversation. If you get that working, add some other crazy ideas!
+=======
