@@ -5,7 +5,7 @@ var FORECAST_TOKEN = process.env.FORECAST_TOKEN;
 var options = {
     APIKey: FORECAST_TOKEN
 };
-var forecast = new Forecast(options);
+//var forecast = new Forecast(options);
 var childProcess = require("child_process");
 var clearskybot_token = process.env.CLSKY_TOKEN;
 // create a bot
@@ -73,11 +73,11 @@ function getUser(userId) {
     })[0];
 }
 
-function getWeather(callback) {
+/*function getWeather(callback) {
     var latitude = "48.208579"
     var longitude = "16.374124"
     var w = ""
-    forecast.get(latitude, longitude, function(err, res, data) {
+    /*forecast.get(latitude, longitude, function(err, res, data) {
         if (err) throw err;
         //console.log('res: ' + JSON.stringify(res));
         //console.log('data: ' + JSON.stringify(data));
@@ -95,4 +95,4 @@ function getWeather(callback) {
         }
         callback(w)
     });
-}
+}*/
