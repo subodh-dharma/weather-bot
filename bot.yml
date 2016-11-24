@@ -1,0 +1,10 @@
+name: Clearsky
+description: Helping you with the Weather updates!
+email: subodh.dharma@gmail.com
+avatar: .clearsky/clearsky.jpg
+slackscopes:
+  - bot
+  - commands
+  - reactions:write
+  - message.im
+  - message.channels
