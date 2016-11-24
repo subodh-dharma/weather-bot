@@ -95,10 +95,4 @@ function getWeather(callback) {
         }
         callback(w)
     });
-
-
-}
-});
-
-
 }
