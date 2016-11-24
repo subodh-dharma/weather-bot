@@ -34,11 +34,9 @@ bot.on('message', function(data) {
     if (data.type == 'message' && getUser(data.user).name != bot.name) {
         console.log("inside if");
         if (data.text.indexOf("weather") != -1 || data.text.indexOf("Weather") != -1) {
-            //reply(data, "The weather is <none>")
-            //reply(data, getWeather())
-            getWeather(function(w) {
-                reply(data, w);
-            });
+            reply(data, "The weather is cool!!!")
+        } else if (data.text.indexOf("hi") != -1 || data.text.indexOf("hello") != -1) {
+            reply(data, "I am doing great!! Thank you for pinging me! \n How can I help you?");
         }
     }
     console.log("debug data" + data)
