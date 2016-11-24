@@ -7,7 +7,7 @@ var options = {
 };
 //var forecast = new Forecast(options);
 var childProcess = require("child_process");
-var clearskybot_token = process.env.CLSKY_TOKEN;
+var clearskybot_token = process.env.SLACK_TOKEN;
 // create a bot
 var bot = new SlackBot({
     // Add a bot https://my.slack.com/services/new/bot and put the token
